@@ -33,7 +33,7 @@ var server = http.createServer(function(request, response) {
     response.write('* {color: #a37654;}')
     response.end()
   } else if (path === '/main.js') {
-    response.setHeader('Content-Type', 'text/script;charset=utf-8')
+    response.setHeader('Content-Type', 'text/javascript;charset=utf-8')
     response.write('alert("test")')
     response.end()
   } else {
